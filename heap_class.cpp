@@ -1,3 +1,5 @@
+//Heap class - basic
+
 #include<iostream>
 using namespace std;
 
@@ -84,9 +86,14 @@ void heap::heapdown(int node)
 void heap::build_heap(void)
 {
     int i;
-    for(i=heap_size/2;i>=1;i--)
+    for(i=n/2;i>=1;i--)
     {
         heapdown(i);
     }
     return;
+}
+
+int main()
+{
+	return 0;
 }
